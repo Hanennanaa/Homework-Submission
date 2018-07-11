@@ -1,0 +1,71 @@
+#main-heading {
+background-color:brown; font-size: 16px; border-style: outset;
+}
+.one{
+  color:black; font-size: 16px;
+}
+.two{
+  color:purple; font-size: 16px;
+}
+h2{
+  border-style: solid;
+}
+.three{
+  color:purple; font-size: 16px;
+}
+.four{
+  color:purple; font-size: 16px;
+}
+.five{
+  color:black; font-size: 16px;
+}
+.five{
+ border-style: solid;
+}
+
+.one{
+ border-style: solid;
+
+}
+h4{
+  color: black; font-size: 16px;
+}
+h4{
+   border-style: solid;
+}
+.eight{
+  width: 200px;
+}
+.nine{
+width: 200px;
+}
+.six{
+ border-style: solid;font-size-adjust: 16px;
+}
+.ten{
+  width: 200px;
+}
+h5{
+ font-size: 14px; border-style: solid;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.box1{
+  color:purple;
+}
+.box2{
+  color:pink;
+}
+.box3{
+  color:blue;
+}
+.box4{
+  color:red;
+}
+p3{
+font-style: oblique;font-size-adjust: 16px;
+}
