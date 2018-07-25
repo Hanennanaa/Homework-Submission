@@ -1,0 +1,60 @@
+
+.grid-item {
+color:blue;
+font-family: sans-serif;
+font-weight: bold;
+width: 25%;
+border:2px solid black;
+font-size: 10px;
+box-sizing: border-box;
+margin: 10px;
+padding: 5px;
+list-style-type: none;
+word-wrap: break-word
+}
+
+#grid-floats .grid-item {
+display: inline-block
+}
+
+#grid-floats {
+clear: right
+}
+
+#grid-flex {
+display: flex;
+flex-wrap: wrap
+}
+
+.drone1 {
+color: blue;
+float:left;
+width: 40%
+
+}
+
+img {
+width: 20%
+}
+
+@media only screen and (min-width: 1024px) {
+.grid-item {
+  width: calc(100% / 5)
+}
+
+}
+
+@media only screen and (max-width: 1023px) {
+.grid-item {
+  width: calc(100% / 4)
+}
+}
+
+@media only screen and (max-width: 768px) {
+.grid-item {
+  width: calc(100% / 3)
+}
+.drone1f {
+  width: 100%
+}
+}
