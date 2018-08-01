@@ -1,0 +1,95 @@
+var y= 'hello world';
+
+console.log (y)
+  
+var x= 'Halo, dunia!';
+
+console.log (x)
+
+var a= 'Ciao, mondo!'; 
+
+console.log (a)
+
+var b= 'Hola, mundo!';
+
+console.log (b)
+
+//console.log('I'm awesome');
+            // in this code the problem is there is more than sinlge quotes as it should be double quotes and single quotes inside it and vice verse!and it should be written like the one below 
+
+
+            console.log("I'm awesome" );
+var x;
+console.log('i think the value of x is 2');
+console.log(x)
+x= 2;
+console.log('i think the value of x is 2');
+console.log(x)
+var y; 
+console.log('i think the value of string y is 5');
+console.log(y)
+var string;('i think the value of string y is 5')
+console.log(6)
+
+var z= 7.25;
+console.log(z)
+var a=7
+console.log(a)
+
+var z= 7.25;
+var a= 7;
+console.log(7<7.25);
+
+var array;['i think the value of the array is "1","2","3"']
+
+console.log(3)
+
+var value= [3];
+console.log('i think the value of array is 3')
+
+var animals= ["cat","rabbit","lion"]; 
+console.log(animals);
+
+var animals= ['kitten'];
+console.log(animals);
+
+
+var string =  "this is a test";
+string.length;
+console.log(string)
+console.log(string.length)
+
+
+var x= 7;
+console.log(x)
+var y= x % 3;
+console.log(y)
+var z= 7+ x%3;
+console.log(z)
+
+var int=['1','2','3','4','5','6']
+console.log(2)
+
+var str = "Ali, Ahmed, Noor";
+var res = str.slice(5);
+
+var x= 6/0;
+console.log(6/0)
+var y= 10/0
+console.log(10/0)
+var z= x===y
+//or var  z= 6/0=== 10/0 
+console.log(z)
+
+
+
+
+
+
+
+
+
+
+
+
+
