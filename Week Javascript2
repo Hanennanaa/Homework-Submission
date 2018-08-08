@@ -1,0 +1,63 @@
+ function car (color){
+if (color=="blue"){
+  console.log('car is blue')
+   
+}
+}
+car("blue");
+var code= "four";
+console.log(code)
+
+var age="five";
+console.log(age)
+
+
+function motorbike (code){
+if (code=="one"){
+  console.log('motorbike code is one')
+   
+}
+}
+
+var color= "red";
+console.log(color)
+var age="one";
+console.log(age)
+
+
+var train={color:"green",code:"two", age:"1"}
+console.log(train)
+var x= train.color;
+console.log(x)
+
+var bus={color:"red",code:"one", age:"4"}
+console.log(bus)
+var x= train.code;
+console.log(x)
+
+
+var truck= {color:"black",code:"2", age:"four"}
+console.log(truck)
+var y= truck.age;
+console.log(y)
+
+
+
+
+var vehicles = {type:'bike','motorbike':'car', type:'bus', color:'green'}
+console.log(vehicles)
+  var x=vehicles.color;
+console.log(x)
+
+
+
+
+var teacher= {name:"Rajie",topic:"HTML,CSS", language:"English"}
+console.log(teacher)
+var x= teacher.language;
+console.log(x)
+
+var teacher= {name:"Sa'ad", topic:"Javascript", language:" English"}
+console.log(teacher)
+var y= teacher.topic;
+console.log(y)
