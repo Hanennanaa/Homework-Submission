@@ -1,0 +1,18 @@
+if (question === 'Show me the weather for today') {
+
+document.getElementById('output').value += chatbot: ${Math.ceil(
+          
+   data.list[0].main.temp - 273
+          )};
+         } else {
+			doccument.getElementById('output').value += chatbot: ${Math.ceil( data.list[8].main.tenp - 273
+      )};
+      }
+}) .catch((error)=> {
+console.log(error.message);
+	}); } else { 
+  documeny.getElementById('output').value= "I don't understand that. please entre something else. ";
+  }
+  }
+	
+
