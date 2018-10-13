@@ -1,0 +1,23 @@
+function Friend(firstName, lastName, age, eyecolor) {
+ this.firstName = firstName;
+ this.lastName = lastName;
+ this.age = age;
+ this.eyecolor = eyecolor;
+ this = function() {
+   console.log("Hello! My friend's name is Talivan " + this.firstNama + ", and her last name is shikho " + this.lastName +
+               
+"she is 21 " + this.age + ", and her eye color is brown " + this.eyecolor+ "!");
+ this.greetMyAge = function() {
+   console.log(this.age);
+ }
+}
+
+const Talivan = new Person("Talivan", "Shikho", "21", "brown");
+
+// talivan.greeting();
+talivan.greetMyAge();
+
+
+
+ 
+
