@@ -1,0 +1,105 @@
+var myHttp = require('http');
+
+myHttp.createServer(function (inRequest, myResponse) {
+  myResponse.write('num'); 
+  myResponse.end(); 
+}).listen(8080);  
+
+var myHttp = require('http');
+var send15Response = require('./send5+10Response');
+var send-10Response = require('./send10-20Response');
+var send200Response = require('./send10*20Response');
+const myServerPort = 8080;
+
+function sendDefaultResponse(myResponse)
+{
+	myResponse.setHeader('Content-Type', 'text/html');
+	myResponse.write(`
+		<!html>
+		<html>
+			<head>
+				<title>Hello Canada</title>
+			</head>
+			<body>
+				<h1>Hello World</h1>
+			</body>
+		</html>
+	`);
+}
+
+function handleIncomingRequest (inRequest, myResponse) {
+	switch(inRequest.url)
+	{
+		case "/": sendDefaultResponse(myResponse);
+			break;
+		case "/5+10": send15Response(myResponse);
+			break;
+		case "/10-20": send-10Response(myResponse);
+			break;
+		case "/10*20": send200Response(myResponse);
+			break;
+		
+		default:
+			myResponse.statusCode = 404;
+            myResponse.writeHead(200, {'Content-Type': 'text/plain'});
+            myResponse.write("Error! Information not found.");
+            break;
+	}
+	myResponse.end();    
+}
+
+var myServer = myHttp.createServer(handleIncomingRequest);
+myServer.listen(myServerPort, function() {
+	console.log("Server listening on port " + myServerPort)
+});
+
+
+
+function send15Response(myResponse)
+{
+	myResponse.setHeader('Content-Type', 'text/html');
+	myResponse.write(`
+		<!html>
+		<html>
+			<head>
+				<title>5+10</title>
+			</head>
+			<body>
+				<h1>15</h1>
+			</body>
+		</html>
+	`);
+}
+function send-10Response(myResponse)
+{
+	myResponse.setHeader('Content-Type', 'text/html');
+	myResponse.write(`
+		<!html>
+		<html>
+			<head>
+				<title>10-20</title>
+			</head>
+			<body>
+				<h1>-10</h1>
+			</body>
+		</html>
+	`);
+}
+
+function send200Response(myResponse)
+{
+	myResponse.setHeader('Content-Type', 'text/html');
+	myResponse.write(`
+		<!html>
+		<html>
+			<head>
+				<title>10*20</title>
+			</head>
+			<body>
+				<h1>200</h1>
+			</body>
+		</html>
+	`);
+}
+
+
