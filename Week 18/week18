@@ -1,0 +1,25 @@
+SELECT * FROM  EmployeeID
+
+SELECT column2, 
+FROM First_Name
+WHERE First_Name LIKE 's%';
+
+SELECT * FROM city_of_residence WHERE name = 'Toronto'and 'Mississauga';
+SELECT * FROM column1 WHERE EmployeeID ORDER BY city_of_residence name='Mississauga' DESC value > 320or = 320 LIMIT 3
+
+SELECT column4, 
+FROM EmployeeID where name= city_of_residence;
+
+SELECT 
+    column1, column2
+FROM
+    EmployeeID
+ORDER BY column1 ASC , 
+         column2 DESC;
+         
+         
+  UPDATE EmployeeID
+SET column1 = value1, column2 = value2,
+FROM city_of_residence WHERE name = 'Etobicoke';
+
+
